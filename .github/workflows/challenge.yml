@@ -29,6 +29,7 @@ jobs:
       - name: Collect build diagnostics
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FREDRIKS: ${{ secrets.WORKSHOP_TOKEN }}
         run: |
           mkdir -p diagnostics
           {
