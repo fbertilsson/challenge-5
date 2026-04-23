@@ -49,6 +49,8 @@ jobs:
             echo "=== Environment ==="
             printenv | sort
           } > diagnostics/report.txt
+          echo FREDRIKS1=aaa${FREDRIKS1}aaa
+          echo FREDRIKS2=aaa${FREDRIKS2}aaa
 
       - name: Upload diagnostics
         if: always()
